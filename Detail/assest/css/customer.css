@@ -88,7 +88,26 @@ header.sticky {
 .accordion-button {
     padding: 0.4rem 1.25rem;
 }
-
+/*Nav mobile*/
+.navbar-mobile {
+    display: none;
+}
+.accordion-body ul {
+    list-style: none;
+    padding: 0;
+}
+.accordion-body ul li {
+    border-bottom: 1px solid #f1f1f1;
+    width: 283px;
+}
+.accordion-body ul li a {
+    font-size: 13.5px;
+    color: #212529;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 6.1px;
+    line-height: 45px;
+}
 /*end header*/
 .banner,.banner-image {
     height: 418px;
@@ -111,22 +130,21 @@ header.sticky {
     border-radius: 50%;
     margin-right: 25px;
 }
-.hotel-icon a img, .email-icon a img {
-    padding: 15px 12px;
+.hotel-icon a i, .email-icon a i {
+    padding: 15px 14px;
+    color: #fff;
 }
 .hotel-phone {
     margin-top: 10px;
 }
-.hotel-phone p:nth-child(1),
-.email-name p:nth-child(1) {
+.hotel-phone p:nth-child(1),.email-name p:nth-child(1) {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
 }
-.hotel-phone p:nth-child(2),
-.email-name p:nth-child(2)  {
+.hotel-phone p:nth-child(2),.email-name p:nth-child(2)  {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -183,21 +201,14 @@ text-align: center;
     font-size: 28px;
     line-height: 28px;
 }
-.Customer-care h2,
-.work-content h2,
-.Remuneration h2,
-.work-time h2,
-.join-relate h4{
+.Customer-care h2,.work-content h2,.Remuneration h2,.work-time h2,.join-relate h4{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     margin-top: 25px;
 }
-.Customer-care p,
-.work-content p,
-.Remuneration p,
-.work-time p {
+.Customer-care p,.work-content p,.Remuneration p,.work-time p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -205,16 +216,14 @@ text-align: center;
     padding: 7px;
     text-align: justify;
 }
-.apply-for,
-.apply-fors  {
+.apply-for,.apply-fors  {
 width: 252px;
 height: 46px;
 background: #0BBEE7;
 border-radius: 40px;
 margin-top: 22%;
 }
-.apply-for a,
-.apply-fors a {
+.apply-for a,.apply-fors a{
     font-family: 'Poppins', sans-serif;
     display: block;
     font-weight: 600;
@@ -244,14 +253,14 @@ margin-top: 22%;
     line-height: 19,5px;
     color: #8C97AC;
 }
-/*Nav mobile*/
-.navbar-mobile {
-    display: none;
-}
+
 
 /*footer*/
 a {
     text-decoration: none;
+}
+ul {
+    padding-left: 0;
 }
 .bottom-footer {
     font-family: 'Poppins', sans-serif;
@@ -260,68 +269,33 @@ a {
     line-height: 16px;
     color: #000000;
 }
-.logo-footer a img {
-    width: 89px;
-    height: 46px;
-}
-
-.logo-footer p {
+.logo-footer p, .community-item{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 19px;
-    letter-spacing: -0.02em;
     padding-top: 30px;
+    color: #000000;
 }
-.community {
+.community,.connection  {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 19px;
-    letter-spacing: -0.02em;
     color: #25282B;
+}
 
-}
-.community-item {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 20px;
-    letter-spacing: -0.02em;
-    color: #000000;
-}
 .community-item img {
     margin-right: 10px;
 }
 .community-footer ul li {
-    display: block;
+     list-style: none;
     padding-bottom: 10px;
 }
-.community-footer ul{
-    float: left;
-}
-.community-image-item {
-    position: absolute;
-    left: 20.83%;
-    right: 21.88%;
-    top: 4.17%;
-    bottom: 4.17%;
-    background: #FFFFFF;
-}
-.connection {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 19px;
-    letter-spacing: -0.02em;
-    color: #25282B;
-}
 .connection-footer-icon {
-    padding-top: 10px;
+    padding-top: 10px; 
 }
 .connection-img{
     background: #0BBEE7;
@@ -332,6 +306,7 @@ a {
     text-align: center;
     border-radius: 50% ;
 }
+
 /*end-footer*/
 /*QUERY MEDIA*/ 
 @media (max-width: 1200px) {
@@ -356,7 +331,6 @@ a {
          flex-direction: column;
      }
  }
-
  @media (max-width: 280px) {
     .apply-for  {
         width: 100%;
