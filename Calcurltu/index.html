@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/css/style.css">
+</head>
+<body>
+   <div class="container-main">
+    <header  >
+         <nav class="nabbar navbar d-md-flex justify-content-between align-items-center">
+            <div class="container">
+
+                 <div class="logo-image ">
+                     <div class="image">
+                         <img src="./assest/images/logo.png" alt="image">
+                     </div>
+                  </div>
+   
+                  <div class=" nav-menu_right" >
+                      <ul class="nav-ul">
+                          <li><a href="#">Trang chủ</a></li>
+                          <li><a href="#">Giới thiệu <img class="vertor" src="./assest/images/Vector 2.png" alt="image"></a>
+                            <ul class="submenu">
+                                <li><a href="#">Về React & React Native</a></li>
+                                <li><a href="#">Công ty React Plus</a></li>
+                                <li><a href="#">Các khoá đào tạo</a></li>
+                                <li><a href="#">Sự kiện thường kỳ</a></li>
+                               </ul>
+                        </li>
+                          <li><a href="#">Văn hóa </a></li>
+                          <li><a href="#">Tuyển dụng</a></li>
+                          <li><a href="#">Đào tạo & Sự kiện</a></li>
+                          <li><a href="#">Vì cộng đồng</a></li>
+                          <li><a href="#">Tin tức & Blog</a></li>
+                      </ul>
+                   
+                      <a  class="navbar-mobile" type="button" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasRight"  aria-controls="offcanvasRight">
+                        <i class="fas fa-bars" style="color: #fff; display: flex; justify-content: flex-end; align-items: flex-end; font-size: 25px;"></i>
+                      </a>
+
+                       
+                  </div>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <div class="image">
+                            <img src="./assest/images/logo.png" alt="image">
+                        </div>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" >
+                                <a class="accordion-buttons" >
+                                    Trang chủ
+                                </a>
+                              </h2> 
+                            </div>
+        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+                                     Giới thiệu
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <ul>
+                                          <li><a href="#">Về React & React Native</a></li>
+                                          <li><a href="#">Công ty React Plus</a></li>
+                                          <li><a href="#">Các khoá đào tạo</a></li>
+                                          <li><a href="#">Sự kiện thường kỳ</a></li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" >
+                                  <a class="accordion-buttons">
+                                    Văn hóa
+                                  </a>
+                                </h2>
+                              </div>
+        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" >
+                                  <a class="accordion-buttons">
+                                    Tuyển dụng
+                                  </a>
+                                </h2>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Đào tạo & Sự kiện
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Bảng tin</a></li>
+                                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Thiết kế Web</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" >
+                                  <a class="accordion-buttons">
+                                    Vì Cộng đồng
+                                  </a>
+                                </h2>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" >
+                                  <a class="accordion-buttons">
+                                    Tin tức & Blog
+                                  </a>
+                                </h2>
+                              </div>
+                              
+                            </div>
+                          </div>
+                  </div> 
+        
+            </div>
+             </nav>
+     </header><!--end-header-->
+ 
+     <main>
+         <section class="banner">
+             <div class="banner-image">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="introduce">
+                        <h1>Giới thiệu</h1>
+                   </div>
+                </div>
+             </div>
+         </section><!--end-banner-->
+         <section class="title">
+             <div class="container">
+                 <div class="title-text">
+                     <h2>Làng React</h2>
+                     <p>React Plus là một cái làng, nơi mà anh em tắt lửa tối đèn có nhau. Chúng tôi dành nhau những bát mỳ nóng hổi cuối buổi OT, bật dậy thả tim cho tin nhắn giữa đêm báo kháck ok rồi, bồi hồi nhớ lại những buổi đi chơi, tưng bừng mua bán từ đôi giày đến cái máy chơi game, và đặc biệt, xúc động nghẹ ngào mỗi lần chia thưởng dự án cuối năm...</p>
+                 </div>
+             </div>
+         </section><!--end-title-->
+         <section class="persion">
+            <div class="persion-image">
+          
+                        <div class="persion-image_people1">
+                            <img src="./assest/images/Rectangle 38.png" alt="image">
+                          </div>
+        
+                          <div class="persion-image_people2">
+        
+                            <img src="./assest/images/Rectangle 24.png" alt="image">
+                        </div>
+        
+                        <div class="persion-image_people3">
+                            <img src="./assest/images/Rectangle 25.png" alt="image">
+                        </div>
+
+                        <div class="persion-image_people4">
+                            
+                            <img src="./assest/images/Rectangle 26.png" alt="image">
+                            </div>             
+                            <div class="persion-image_people5">
+                                <img src="./assest/images/Rectangle 27.png" alt="image">
+                            </div>
+            
+                            <div class="persion-image_people6">
+                                <img src="./assest/images/Rectangle 28.png" alt="image">
+                            </div>
+            
+                            <div class="persion-image_people7">
+                                <img src="./assest/images/Rectangle 29.png" alt="image">
+                            </div>
+            
+                            <div class="persion-image_people8">
+                                <img src="./assest/images/Rectangle 39.png" alt="image">
+                            </div>
+            </div>
+         </section><!--persion-->
+ 
+         <section class="work-office">
+            <div class="work-office_image">
+                <p>VĂN PHÒNG LÀM VIỆC</p>
+                <h2>Không gian làm việc & Trang thiết bị</h2>
+               <div class="container">
+                   <div class="row gx-3 mt-5">
+                       <div class="col-xl-8">
+                            <div class="row gx-3">
+                                <div class="col-xl-7 col-md-7">
+                                    <img src="./assest/images/Rectangle 33.png" class="w-100 h-100" alt="image" >
+                                </div>
+                                <div class="col-xl-5 col-md-5 office-image ">
+                                 <img src="./assest/images/Rectangle 36.png" class="w-100 h-100"  alt="image">
+                                </div>
+                            </div>
+                           
+                            <div class="row gx-3">
+                             <div class="col-xl-6 col-md-6 mt-3">
+                                 <img src="./assest/images/Rectangle 35.png" class="w-100 h-100"  alt="image">
+                             </div>
+                             <div class="col-xl-6 col-md-6 mt-3">
+                              <img src="./assest/images/Rectangle 34.png" class="w-100 h-100"  alt="image">
+                             </div>
+                            </div>
+ 
+                       </div>
+                       <div class="col-xl-4 col-md-12 destop-image ">
+                           <img src="./assest/images/Rectangle 37.png" class="w-100 " height="565px" alt="image">
+                       </div>
+                   </div>
+               </div>
+            </div>
+         </section><!--end-work-office-->
+
+         <section class="healthy mt-5">
+                 <div class="container">
+                    <div class="row">
+                       <div class="col-xl-6 col-md-12 col-12">
+                        <div class="healthy-image">
+                            <img src="./assest/images/Rectangle 1688.png" style="width: 100%; height: 100%" alt="image">
+                        </div>
+                       </div>
+                       <div class="col-xl-6 col-md-12 col-12">
+                           <div class="healthy-gold">
+                               <h3>Sức khoẻ là vàng</h3>
+                               <p class="healthy-text1">
+                                React Plus quan tâm sâu sắc tới sức khoẻ của từng thành viên, do đó, chúng tôi mạnh dạn tổ chức đợt khám sức khoẻ tổng thể hàng năm cho tất cả các thành viên.
+                    
+                               </p>
+                               <p class="healthy-text2">
+                                Ngoài ra, chúng tôi liên tục tổ chức các ngày hội thể thao, thành lập các câu lạc bộ và tổ chức các buổi tea-break time hàng ngày giúp cân bằng các bó cơ lưng bụng, chống thoái hoá cột sống, tăng dẻo dai cho cơ mặt....
+                               </p>
+                                 
+                               <div class="btn-healthy mt-4" >
+                                   <div class="btn-1">
+                                    <a href="#" class="text-decoration-none"><p>CLB Thể thao điện tử</p></a>
+                                   </div>
+                                   <div class="btn-2">
+                                    <a href="#" class="text-decoration-none"><p>CLB Trà sữa</p></a>
+                                </div>
+                                <div class="btn-3">
+                                    <a href="#" class="text-decoration-none"><p>CLB Bóng đá</p></a>
+                                </div>
+                               </div>
+                               <div class="btn-4">
+                                <a href="#" class="text-decoration-none"><p>CLB Yoga Điền Kinh</p></a>
+                            </div>
+                           </div>
+                       </div>
+                    </div>
+                 </div><!--end-container-->
+                 
+                 <div class="customary-festival">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-md-12">
+                                 <div class="festival">
+                                     <h3> Hội hè - Tập quán</h3>
+                                     <p class="festival-text1">React Plus không chỉ là nơi để đến làm việc, đây là nơi để mọi người cùng sống và chia sẻ. Mà cuộc sống, thì không thể nào thiếu những chuyến đi: đi du lịch, du xuân, đi thi, đi hội, đi ăn, đi chơi, đi ngủ, đi nghỉ, đi khắp nơi cùng nhau... Quan trọng nhất là đi đâu thì đi, cứ phải vui cái đã.</p>
+                                    <p class="festival-text2">  Sau những đợt chạy dự án dài hơi không thế nào thiếu được những bữa liên hoan vui nổ trời. Đặc biệt, làng React quanh năm luôn tưng bừng với các thể loại hội hè lễ Tết, giúp các anh chị em đầu thôn cuối xóm gắn kết, thật mật cùng nhau.</p>
+                                   <div class="btn-festival mt-4">
+                                    <div class="btn-festival1">
+                                        <a href="#" class="text-decoration-none"><p>Hội xuân hàng năm</p></a>
+                                       </div>
+                                       <div class="btn-festival2">
+                                        <a href="#" class="text-decoration-none"><p>Thi hoa hậu</p></a>
+                                    </div>
+                                    <div class="btn-festival3">
+                                        <a href="#" class="text-decoration-none"><p>Trạng nguyên</p></a>
+                                    </div>
+                                   </div>
+                                   <div class="btn-festival4">
+                                    <a href="#" class="text-decoration-none"><p>Du lịch năm nào cũng có</p></a>
+                                </div>
+                                 </div>
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <div class="festival-image">
+                                    <img src="./assest/images/Rectangle 1689.png" style="width: 100%; height: 100%"  alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div><!--end-customary-festival-->
+         </section>
+         
+         <section class="Insider-Award mt-5">
+          <div class="container">
+            <p class="awards" >AWARDS</p>
+            <div class="prize d-md-flex justify-content-between">
+                <div class="internal-awards">
+                    <h2>Giải thưởng nội bộ</h2>
+                </div>
+              <div class="see-more" style="display: flex; justify-content: flex-start; ">
+                 <a href="#" style="width: 73px; height: 19px; font-weight: 400; font-style: normal; font-size: 14px; text-decoration: none; line-height: 
+                 18,96px; color: #0BBEE7;"> <p>Xem thêm</p></a>
+                  <div class="arrow" style="background: rgba(11, 190, 231, 0.1); border-radius: 50%; width: 24px; height: 24px; margin: 0 15px;">
+                    <a href="#" style="text-align: center; padding: 0px 9px; font-size: 12px;"><i class="fal fa-chevron-right"></i></a>
+                  </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                 <div class="multi-class-hero">
+                    <div class="multi-hero_image">
+                        <img src="./assest/images/image 14.png" alt="image">
+                    </div>
+                     <h4 class="multi-hero_title">Giải thưởng anh hùng lao động nhiều hạng</h4>
+                     <p class="multi-hero_text">Cập nhật mới cho phép nhà phát triển làm gì đó đại loại vậy...</p>
+                 </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="multi-class-hero">
+                        <div class="multi-hero_image">
+                            <img src="./assest/images/image 13.png" alt="image">
+                        </div>
+                        <h4 class="multi-hero_title">Giải thưởng nông dân tiêu biểu của tháng</h4>
+                        <p class="multi-hero_text">Chuyến du lịch mùa thu đáng nhớ năm 2021 của tập thể công ty React Plus...</p>
+                    </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="multi-class-hero">
+                    <div class="multi-hero_image">
+                        <img src="./assest/images/image 15.png" alt="image">
+                    </div>
+                    <h4 class="multi-hero_title">Giải thưởng tập thể văn hoá của tháng </h4>
+                    <p class="multi-hero_text">12 sinh viên vừa tốt nghiệp đã trải qua kỳ đào tạo và trở thành thực tập sinh tại...</p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="multi-class-hero">
+                    <div class="multi-hero_image">
+                        <img src="./assest/images/image 16.png" alt="">
+                    </div>
+                    <h4 class="multi-hero_title">Giải thưởng anh hùng lao động nhiều hạng</h4>
+                    <p class="multi-hero_text">Cập nhật mới cho phép nhà phát triển làm gì đó đại loại vậy...</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+         </section>
+
+         <section class="Join-us mt-5" >
+                <div class="container ">
+                    <div class="join">
+                        <div class="join-now d-flex justify-content-center" >
+                             <div class="btns" >
+                                <h4 class="text-center">Tham gia với chúng tôi,
+                                    đội ngũ React Plus</h4>
+                                <button type="submit" class="">Tham gia ngay</button>
+                             </div>
+                         </div>
+                         
+                    </div>
+                </div>
+         </section>
+        
+ 
+     </main>
+
+     <footer>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg logo-footer">
+                        <a href="">
+                            <img src="./assest/images/logo.png" alt="">
+                        </a>
+                        <p>
+                            Tầng 7, Golden Field Building,<br>
+                            24 Nguyễn Cơ Thạch, Nam Từ Liêm, Hà Nội
+                        </p>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg  community-footer">
+                        <ul>
+                            <li><a class="community" href="">Cộng đồng</a></li>
+                            <li><a class="community-item" href="">Đào tạo & Sự kiện</a></li>
+                            <li><a class="community-item" href="">Vì cộng đồng</a></li>
+                            <li><a class="community-item" href="">Tin tức & Blog</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg community-footer">
+                        <ul>
+                            <li><a class="community" href="">Công ty</a></li>
+                            <li><a class="community-item" href="">Giới thiệu</a></li>
+                            <li><a class="community-item" href="">Văn hoá</a></li>
+                            <li><a class="community-item" href="">Tuyển dụng</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg community-footer">
+                        <ul>
+                            <li><a class="community" href="">Liên Hệ</a></li>
+                            <li><a class="community-item" href=""><img src="./assest/images/Vector-1.png" alt="">0349177306 </a>
+                            </li>
+                            <li><a class="community-item" href=""><img src="./assest/images/Vector 2.png" alt="">contact@reactplus.jp</a>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg connection-footer">
+                        <a class="connection" href="">kết nối với chúng tôi</a>
+                        <div class="connection-footer-icon">
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/images/Vector3.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/images/Vector 4.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/images/Vector 5.png" alt="image">
+                                </a>
+                            </div>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <span class="bottom-footer">© React Plus, JSC 2021. All rights reserved.</span>
+        </div>
+    </footer>
+   </div>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+<script>
+    window.addEventListener("scroll", function() {
+        let header = document.querySelector("header");
+        header.classList.toggle("fixed", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>
