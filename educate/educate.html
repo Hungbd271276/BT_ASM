@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="nabbar navbar d-md-flex justify-content-between align-items-center">
+            <div class="container">
+                <div class="col-2 ">
+                    <div class="image">
+                        <img src="./assest/img/logoreact.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="col-10 nav-menu_right">
+                    <ul class="nav-ul">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu <img class="vertor" src="./assest/img/gt.png" alt="image"></a>
+                            <ul class="submenu">
+                                <li><a href="#">Về React & React Native</a></li>
+                                <li><a href="#">Công ty React Plus</a></li>
+                                <li><a href="#">Các khoá đào tạo</a></li>
+                                <li><a href="#">Sự kiện thường kỳ</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#">Văn hóa </a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Đào tạo & Sự kiện</a></li>
+                        <li><a href="#">Vì cộng đồng</a></li>
+                        <li><a href="#">Tin tức & Blog</a></li>
+                    </ul>
+                    <a class="navbar-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <i class="fas fa-bars"
+                            style="color: #000; display: flex; justify-content: flex-end; align-items: flex-end; font-size: 25px;"></i>
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <div class="image">
+                            <img src="./assest/img/logoreact.png" alt="image">
+                        </div>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Trang chủ
+                                    </a>
+                                </h2>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Giới thiệu
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Về React & React Native</a></li>
+                                            <li><a href="#">Công ty React Plus</a></li>
+                                            <li><a href="#">Các khoá đào tạo</a></li>
+                                            <li><a href="#">Sự kiện thường kỳ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Văn hóa
+                                    </a>
+                                </h2>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Tuyển dụng
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Đào tạo & Sự kiện
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>Bảng tin
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>Thiết kế Web
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Vì Cộng đồng
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Tin tức & Blog
+                                    </a>
+                                </h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </header>
+    <!--end-header-->
+    <main>
+        <div class="">
+            <div class="banner">
+                <img src="./assest/img/banner.png" alt="">
+            </div>
+
+        </div>
+        <!--bennerfit-->
+        <div class="container">
+            <div class="title">
+                <h2>Lợi ích đặc biệt từ khoá học</h2>
+            </div>
+            <div class="benefit">
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card text-center border border-0">
+                            <img class="img-educate" src="./assest/img/1.png" class="rounded-circle carf-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Nơi làm việc của đông đảo chuyên
+                                    <br>
+                                    gia và kỹ sư yêu thích React
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card text-center border border-0">
+                            <img class="img-educate" src="./assest/img/2.png" class="rounded-circle carf-img-top" alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Nơi làm việc của đông đảo chuyên
+                                    <br> gia và kỹ sư yêu thích React
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card text-center border border-0">
+                            <img class="img-educate" src="./assest/img/3.png" class="rounded-circle carf-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Nơi làm việc của đông đảo chuyên
+                                    <br> gia và kỹ sư yêu thích React
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--end bennerfit-->
+        <!--main content-->
+        <div class="main-content">
+            <div class="container">
+                <h2>Nội dung chính khóa học</h2>
+                <div class="row">
+
+                    <div class=" col-12 col-sm-12 col-md-12 col-lg-6  ">
+                        <div class="row mb-5 d-flex justify-content-end ">
+
+                            <div class="col-12 col-sm-2 col-md-2 col-lg-3 col-xl-2 comment-img ">
+                                <img class="text-center" src="./img/1.png">
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-10 comment-title">
+                                <p>
+                                    Kiến thức về công nghệ React - xu hướng phát triển
+                                    trong tương lai với cơ hội việc
+                                    làm và mức lương hấp
+                                    dẫn. Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class=" row d-flex mb-5">
+                            <div class="col-12 col-sm-2 col-md-2 col-lg-3 col-xl-2 comment-img">
+                                <img src="./assest/img/1.png">
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-10 comment-title">
+                                <p>
+                                    Kiến thức về công nghệ React - xu hướng phát triển
+                                    trong tương lai với cơ hội việc
+                                    làm và mức lương hấp
+                                    dẫn. Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class=" row d-flex mb-5">
+                            <div class="col-12 col-sm-2 col-md-2 col-lg-3 col-xl-2 comment-img">
+                                <img src="./assest/img/1.png">
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-10 comment-title">
+                                <p>
+                                    Kiến thức về công nghệ React - xu hướng phát triển
+                                    trong tương lai với cơ hội việc
+                                    làm và mức lương hấp
+                                    dẫn. Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+                        <div class=" row d-flex mb-5">
+                            <div class="col-12 col-sm-2 col-md-2 col-lg-3 col-xl-2 comment-img">
+                                <img src="./assest/img/1.png">
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-10 comment-title">
+                                <p>
+                                    K Kiến thức về công nghệ React - xu hướng phát triển
+                                    trong tương lai với cơ hội việc
+                                    làm và mức lương hấp
+                                    dẫn. Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class=" row d-flex mb-5">
+                            <div class="col-12 col-sm-2 col-md-2 col-lg-3 col-xl-2 comment-img">
+                                <img src="./assest/img/1.png">
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-10 comment-title">
+                                <p>
+                                    Kiến thức về công nghệ React - xu hướng phát triển
+                                    trong tương lai với cơ hội việc
+                                    làm và mức lương hấp
+                                    dẫn. Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class=" row d-flex mb-5">
+                            <div class="col-12 col-sm-2 col-md-2 col-lg-3 col-xl-2 comment-img">
+                                <img src="./assest/img/1.png">
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-10 comment-title">
+                                <p>
+                                    Kiến thức về công nghệ React - xu hướng phát triển
+                                    trong tương lai với cơ hội việc
+                                    làm và mức lương hấp
+                                    dẫn. Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.Cập nhật những nội dung mới nhất từ cộng đồng
+                                    React thế
+                                    giới.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end main content-->
+         <!-- death-->
+        <div class="death">
+            <div class="container">
+                <h2>Đặc điểm khóa học</h2>
+                <div class="row ">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img align-items-center border border-0">
+                            <img src="./assest/img/3.png" class="rounded-circle carf-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Thời gian</h5>
+                                <p class="card-text">Kiến thức về công nghệ React - xu hướng phát triển trong tương lai
+                                    với cơ hội việc làm và mức lương hấp dẫn. Cập nhật những nội dung mới nhất từ cộng
+                                    đồng React thế giới.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img align-items-center border border-0">
+                            <img src="./assest/img/3.png" class="rounded-circle carf-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Thời gian</h5>
+                                <p class="card-text">Kiến thức về công nghệ React - xu hướng phát triển trong tương lai
+                                    với cơ hội việc làm và mức lương hấp dẫn. Cập nhật những nội dung mới nhất từ cộng
+                                    đồng React thế giới.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img align-items-center border border-0">
+                            <img src="./assest/img/3.png" class="rounded-circle carf-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Thời gian</h5>
+                                <p class="card-text">Kiến thức về công nghệ React - xu hướng phát triển trong tương lai
+                                    với cơ hội việc làm và mức lương hấp dẫn. Cập nhật những nội dung mới nhất từ cộng
+                                    đồng React thế giới.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img align-items-center border border-0">
+                            <img src="./assest/img/3.png" class="rounded-circle carf-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Thời gian</h5>
+                                <p class="card-text">Kiến thức về công nghệ React - xu hướng phát triển trong tương lai
+                                    với cơ hội việc làm và mức lương hấp dẫn. Cập nhật những nội dung mới nhất từ cộng
+                                    đồng React thế giới.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end death-->
+        <!-- lecturers-->
+        <div class="lecturers">
+            <div class="container">
+                <h2>Đội ngũ giảng viên</h2>
+                <div class="row ">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img border border-0  align-items-center">
+                            <img src="./assest/img/Frame.png" class="rounded-circle carf-img-top death-img-item" alt="...">
+                            <img src="./assest/img/gv.png"
+                            class="rounded-circle carf-img-top align-self-center speakers-item1" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lương Xuân Hải</h5>
+                                <p class="card-text">Chuyên về React & React Native<br>
+                                    Sẵn sàng 24/7<br>
+                                    Đẳng cấp thế giới<br>
+                                    Khả năng tăng trưởng, mở rộng nhanh<br>
+                                    Phản hồi ngay lập tức</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img border border-0  align-items-center">
+                            <img src="./assest/img/Frame.png" class="rounded-circle carf-img-top death-img-item" alt="...">
+                            <img src="./assest/img/gv.png"
+                            class="rounded-circle carf-img-top align-self-center speakers-item1" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lương Xuân Hải</h5>
+                                <p class="card-text">Chuyên về React & React Native<br>
+                                    Sẵn sàng 24/7<br>
+                                    Đẳng cấp thế giới<br>
+                                    Khả năng tăng trưởng, mở rộng nhanh<br>
+                                    Phản hồi ngay lập tức</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img border border-0  align-items-center">
+                            <img src="./assest/img/Frame.png" class="rounded-circle carf-img-top death-img-item" alt="...">
+                            <img src="./assest/img/gv.png"
+                            class="rounded-circle carf-img-top align-self-center speakers-item1" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lương Xuân Hải</h5>
+                                <p class="card-text">Chuyên về React & React Native<br>
+                                    Sẵn sàng 24/7<br>
+                                    Đẳng cấp thế giới<br>
+                                    Khả năng tăng trưởng, mở rộng nhanh<br>
+                                    Phản hồi ngay lập tức</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+                        <div class="card text-center death-img border border-0  align-items-center">
+                            <img src="./assest/img/Frame.png" class="rounded-circle carf-img-top death-img-item" alt="...">
+                            <img src="./assest/img/gv.png"
+                            class="rounded-circle carf-img-top align-self-center speakers-item1" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lương Xuân Hải</h5>
+                                <p class="card-text">Chuyên về React & React Native<br>
+                                    Sẵn sàng 24/7<br>
+                                    Đẳng cấp thế giới<br>
+                                    Khả năng tăng trưởng, mở rộng nhanh<br>
+                                    Phản hồi ngay lập tức</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--end lecturers-->
+        <div class="banner-bot container justify-content-center d-flex ">
+            <div class="btn-bot ">
+                <h5>Tham gia khóa học<br>
+                    của chúng tôi ngay</h5>
+                <button type="button" class="btn-bot-item  ">Tham gia ngay</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    </div>
+    <footer>
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-4 logo-footer">
+                        <a href="">
+                            <img src="./assest/img/logoreact.png" alt="">
+                        </a>
+                        <p>
+                            Tầng 7, Golden Field Building,<br>
+                            24 Nguyễn Cơ Thạch, Nam Từ Liêm, Hà Nội
+                        </p>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 community-footer">
+                        <ul>
+                            <li><a class="community" href="">Cộng đồng</a></li>
+                            <li><a class="community-item" href="">Đào tạo & Sự kiện</a></li>
+                            <li><a class="community-item" href="">Vì cộng đồng</a></li>
+                            <li><a class="community-item" href="">Tin tức & Blog</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 community-footer">
+                        <ul>
+                            <li><a class="community" href="">Công ty</a></li>
+                            <li><a class="community-item" href="">Giới thiệu</a></li>
+                            <li><a class="community-item" href="">Văn hoá</a></li>
+                            <li><a class="community-item" href="">Tuyển dụng</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 community-footer">
+                        <ul>
+                            <li><a class="community" href="">Liên Hệ</a></li>
+                            <li><a class="community-item" href=""><img src="./assest/img/logodth.png" alt="">0349177306 </a>
+                            </li>
+                            <li><a class="community-item" href=""><img src="./assest/img/logogmail.png"
+                                        alt="">contact@reactplus.jp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 connection-footer">
+                        <a class="connection" href="">kết nối với chúng tôi</a>
+                        <div class="connection-footer-icon">
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/img/logoface.png" alt="">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/img/logoin.png" alt="">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/img/you.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <span class="bottom-footer">© React Plus, JSC 2021. All rights reserved.</span>
+        </div>
+
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Document</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="nabbar navbar d-md-flex justify-content-between align-items-center">
+            <div class="container">
+                <div class="col-2 ">
+                    <div class="image">
+                        <img src="./assest/img/logoreact.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="col-10 nav-menu_right">
+                    <ul class="nav-ul">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu <img class="vertor" src="./assest/img/gt.png" alt="image"></a>
+                            <ul class="submenu">
+                                <li><a href="#">Về React & React Native</a></li>
+                                <li><a href="#">Công ty React Plus</a></li>
+                                <li><a href="#">Các khoá đào tạo</a></li>
+                                <li><a href="#">Sự kiện thường kỳ</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#">Văn hóa </a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Đào tạo & Sự kiện</a></li>
+                        <li><a href="#">Vì cộng đồng</a></li>
+                        <li><a href="#">Tin tức & Blog</a></li>
+                    </ul>
+                    <a class="navbar-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <i class="fas fa-bars"
+                            style="color: #000; display: flex; justify-content: flex-end; align-items: flex-end; font-size: 25px;"></i>
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <div class="image">
+                            <img src="./assest/img/logoreact.png" alt="image">
+                        </div>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Trang chủ
+                                    </a>
+                                </h2>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Giới thiệu
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Về React & React Native</a></li>
+                                            <li><a href="#">Công ty React Plus</a></li>
+                                            <li><a href="#">Các khoá đào tạo</a></li>
+                                            <li><a href="#">Sự kiện thường kỳ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Văn hóa
+                                    </a>
+                                </h2>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Tuyển dụng
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Đào tạo & Sự kiện
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>Bảng tin
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>Thiết kế Web
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Vì Cộng đồng
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <a class="accordion-buttons">
+                                        Tin tức & Blog
+                                    </a>
+                                </h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </header>
+    <!--end-header-->
+    <main>
+        <div class="banner-slide mb-4">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assest/img/pin-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assest/img/pin-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assest/img/pin-2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="time-line container">
+            <div class="trainingRoute-grid-layout row text-center">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
+                    <div class="date"><b><a href="">01.10.2021-28.11.2021</a></b></div>
+                    <div class="divide">
+                        <div class="hr">
+                        </div>
+                        <div class="divide-item d-flex justify-content-center">
+                            <div class="circle-item">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>Talkshow</b></p>
+                    <div class="trainingRoute-text">
+                        <p>Tương lai của React trên thị trường<br>
+                            Việt Nam và quốc tế</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="date"><b><a href="">01.10.2021-28.11.2021</a></b></div>
+
+                    <div class="divide">
+                        <div class="hr">
+                        </div>
+                        <div class="divide-item d-flex justify-content-center">
+                            <div class="circle ">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>Talkshow</b></p>
+                    <div class="trainingRoute-text text-center">
+                        <p>Khoá đào tạo hoàn toàn miễn phí giúp <br>
+                            các bạn sinh viên IT bước đầu làm quen với<br>
+                            React - React Native</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="date"><b><a href="">01.10.2021-28.11.2021</a></b></div>
+                    <div class="divide">
+                        <div class="hr">
+                        </div>
+                        <div class="divide-item d-flex justify-content-center">
+                            <div class="circle-item">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>Talkshow</b></p>
+                    <div class="trainingRoute-text">
+                        <p>Tương lai của React trên thị trường<br>
+                            Việt Nam và quốc tế</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="Preschool container d-flex mt-4">
+            <div class="preschool-icon justify-content-center">
+                <ul>
+                    <li><a href="fb.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="fb.com"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="fb.com"><i class="fas fa-link"></i></a></li>
+                </ul>
+            </div>
+            <div class="preschool-title ">
+                <div class="preschool-top d-flex row">
+                    <div class="preschool-map d-flex col-12 col-sm-12 col-md-3 col-lg-4">
+                        <i class="fas fa-map-marker-alt align-self-center"></i>
+                        <p class="align-self-center">React Plus HQ, Cầu Giấy, Hà Nội</p>
+                    </div>
+                    <div class="preschool-time  d-flex  col-12 col-sm-12 col-md-3 col-lg-5">
+                        <i class="far fa-clock align-self-center"></i>
+                        <p class="align-self-center"> 06 Mar 2020 00:00 - 08 Mar 2020 00:00</p>
+                    </div>
+                </div>
+                <div class="preschool-main">
+                    <h2>Khoá đào tạo Mầm non React</h2>
+                    <img src="./assest/img/prres.png" alt="">
+                    <h6 class="pres-title">Nội dung sự kiện</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.<br>
+                        <br>
+
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.<br>
+                        <br>
+
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur.<br>
+                        <br>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </p>
+                </div>
+                <div class="speakers">
+                    <h6 class="speakers-title">Diễn giả</h6>
+                    <div class="row d-flex justify-content-center ">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4  rows">
+                            <div class="card text-center death-img border border-0 text-center  ">
+                                <img src="./assest/img/Frame.png"
+                                    class="rounded-circle carf-img-top align-self-center speakers-item" alt="...">
+                                <img src="./assest/img/gv.png"
+                                    class="rounded-circle carf-img-top align-self-center speakers-item1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lương Xuân Hải</h5>
+                                    <p class="card-text">Chuyên về React & React Native<br>
+                                        Sẵn sàng 24/7<br>
+                                        Đẳng cấp thế giới<br>
+                                        Khả năng tăng trưởng, mở rộng nhanh<br>
+                                        Phản hồi ngay lập tức</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4   rows">
+                            <div class="card text-center death-img border border-0 text-center">
+                                <img src="./assest/img/Frame.png"
+                                    class="rounded-circle carf-img-top align-self-center speakers-item" alt="...">
+                                <img src="./assest/img/gv.png"
+                                    class="rounded-circle carf-img-top align-self-center speakers-item1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lương Xuân Hải</h5>
+                                    <p class="card-text">Chuyên về React & React Native<br>
+                                        Sẵn sàng 24/7<br>
+                                        Đẳng cấp thế giới<br>
+                                        Khả năng tăng trưởng, mở rộng nhanh<br>
+                                        Phản hồi ngay lập tức</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="butt d-flex justify-content-center  ">
+                    <button type="button" class="btn btn-primary btns">Primary</button>
+                </div>
+            </div>
+        </div>
+        <!-- news-content -->
+        <div class="news-content">
+            <div class="container">
+                <h5 class="card-title m-0 news-content-title mb-4">
+                    Các sự kiện đang diễn ra
+                </h5>
+                <div class="row">
+                    <!-- 1item -->
+                    <div class="col-sm-4">
+                        <div class="card border-0">
+                            <img class="card-img-top" src="./assest/img/Rectangle1679.png" alt="" />
+                            <div class="card-body p-0">
+                                <p class=" m-0 news-content-date">
+                                    01/10/2021 - 28/11/2021
+                                </p>
+                                <a href="" class="text-decoration-none">
+                                    <h5 class="card-title m-0 news-content-title">
+                                        Khoá đào tạo mầm non React
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end 1item -->
+                    <!-- 1item -->
+                    <div class="col-sm-4">
+                        <div class="card border-0">
+                            <img class="card-img-top" src="./assest/img/Rectangle1680.png" alt="" />
+                            <div class="card-body p-0">
+                                <p class=" m-0 news-content-date">
+                                    01/10/2021 - 28/11/2021
+                                </p>
+                                <a href="" class="text-decoration-none">
+                                    <h5 class="card-title m-0 news-content-title">
+                                        Talkshow: Ứng dụng React trong ABC giúp cho BCD
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end 1item -->
+                    <!-- 1item -->
+                    <div class="col-sm-4">
+                        <div class="card border-0">
+                            <img class="card-img-top" src="./assest/img/Rectangle1681.png" alt="" />
+                            <div class="card-body p-0">
+                                <p class=" m-0 news-content-date">
+                                    01/10/2021 - 28/11/2021
+                                </p>
+                                <a href="" class="text-decoration-none">
+                                    <h5 class="card-title m-0 news-content-title">
+                                        Talkshow: Ứng dụng React trong ABC giúp cho BCD
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end 1item -->
+                </div>
+            </div>
+        </div>
+        <!-- end news-content -->
+
+
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-4 logo-footer">
+                        <a href="">
+                            <img src="./assest/img/logoreact.png" alt="">
+                        </a>
+                        <p>
+                            Tầng 7, Golden Field Building,<br>
+                            24 Nguyễn Cơ Thạch, Nam Từ Liêm, Hà Nội
+                        </p>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 community-footer">
+                        <ul>
+                            <li><a class="community" href="">Cộng đồng</a></li>
+                            <li><a class="community-item" href="">Đào tạo & Sự kiện</a></li>
+                            <li><a class="community-item" href="">Vì cộng đồng</a></li>
+                            <li><a class="community-item" href="">Tin tức & Blog</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 community-footer">
+                        <ul>
+                            <li><a class="community" href="">Công ty</a></li>
+                            <li><a class="community-item" href="">Giới thiệu</a></li>
+                            <li><a class="community-item" href="">Văn hoá</a></li>
+                            <li><a class="community-item" href="">Tuyển dụng</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 community-footer">
+                        <ul>
+                            <li><a class="community" href="">Liên Hệ</a></li>
+                            <li><a class="community-item" href=""><img src="./assest/img/logodth.png" alt="">0349177306
+                                </a>
+                            </li>
+                            <li><a class="community-item" href=""><img src="./assest/img/logogmail.png"
+                                        alt="">contact@reactplus.jp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 connection-footer">
+                        <a class="connection" href="">kết nối với chúng tôi</a>
+                        <div class="connection-footer-icon">
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/img/logoface.png" alt="">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/img/logoin.png" alt="">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/img/you.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <span class="bottom-footer">© React Plus, JSC 2021. All rights reserved.</span>
+        </div>
+
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
