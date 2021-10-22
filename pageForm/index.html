@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="./index.css"></link>
+    <title>ReactPlus</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+   <div class="container">
+    <ul class="nav py-3 justify-content-around">
+      <li>
+        <img class="img-navbar" src="./img/Logo React Plus-Final-04 1.png"/>
+      </li>
+  
+        <li class="nav-item">
+          <a class="nav-link " href="#">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Văn hóa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Tuyển dụng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Đào tạo&Sự kiện</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Vì cộng đồng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Tin tức&Blog</a>
+        </li>
+    </ul>
+    <div class="d-flex justify-content-center py-5 flex-column align-items-center">
+      <h2>Chuyên viên chăm sóc khách hàng</h2>
+    </div>
+    <div class="input-body">
+      <form class="">
+        <div class="input-child">
+          <label for="exampleInputEmail1" class="form-label">Tên đầy đủ</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>  
+        <div class="form-group input-child">
+        
+            <div class="d-flex align-items-center justify-content-between">
+              <label for="exampleFormControlSelect1">Ngày sinh</label>
+              <select class="form-control form-control-days" id="exampleFormControlSelect1">
+                <option>Ngày</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <select class="form-control form-control-days" id="exampleFormControlSelect1">
+                <option>Tháng</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <select class="form-control form-control-days" id="exampleFormControlSelect1">
+                <option>Năm</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between input-mail input-child">
+            <div class="mb-3">
+              <label for="input1" class="form-label">Email</label>
+              <input type="email" class="form-control form-mail-pass" id="input1" aria-describedby="emailHelp">
+            </div>  
+            <div class="">
+              <label for="input2" class="form-label">Số điện thoại</label>
+              <input type="phone" class="form-control form-mail-pass" id="input2" aria-describedby="emailHelp">
+            </div> 
+          </div>
+          <div class="form-group justify-content-between d-flex form-file input-child">
+            <div class="form-file-cv">
+              <label  for="exampleFormControlFile1">CV</label>
+               <div>Format được hỗ trợ: PNG, JPG, PDF</div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+          </div>
+          <div class="input-child input-child">
+            <label for="input3" class="form-label">Online Portfolio</label>
+            <input type="text" class="form-control" id="input3" aria-describedby="emailHelp">
+          </div>  
+          <div class="input-child">
+            <label for="input4" class="form-label">Một vài tin nhắn dành cho chúng tôi(Không bắt buộc)</label>
+            <input type="text" class="form-control" id="input4" aria-describedby="emailHelp">
+          </div>
+          <div class="d-flex align-items-center justify-content-between bootom-boder">
+            <div>
+              <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+            </div>
+            <span class="button-white">
+              Hủy
+            </span>
+            <span class="button-primary">
+              Gửi
+            </span>
+          </div>  
+      </form>
+     </div>
+     </div>
+     <footer class="text-center text-lg-start bg-light text-muted">
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+     
+          <div class="row">
+        
+            <div class=" col-xl-4 mx-auto mb-4">
+       
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img class="mt-4" src="./img/Logo React Plus-Final-04 1.png"/>
+              </h6>
+              <p class="mt-4 font-footer">
+                Tầng 7,Golden Field Building, <br/> 24 Nguyễn Cơ Thạch, Nam Từ Liêm , Hà Nội  
+              </p>
+
+              <p class="font-footer mt-3">
+                ©ReactPlus, JSC 2021. All rights reserved. 
+              </p>
+            </div>
+       
+    
+  
+            <div class=" mt-4 col-xl-2 mx-auto mb-4">
+     
+              <h6 class="font-footer fw-bold mb-4">
+                Cộng Đồng
+              </h6>
+              <p>
+                <a href="#!" class="text-reset font-footer">Đào tạo & Sự Kiện</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset font-footer">Vì Cộng Đồng</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset font-footer">Tin tức & Blog</a>
+              </p>
+            </div>
+    
+            <div class="col-xl-2 mx-auto mb-4">
+             
+              <h6 class="font-footer fw-bold mt-4 mb-4">
+                Công Ty
+              </h6>
+              <p>
+                <a href="#!" class="text-reset font-footer">Giới Thiệu</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset font-footer">Văn Hóa</a>
+              </p>
+              <p>
+                <a href="#!" class="font-footer text-reset">Tuyển dụng</a>
+              </p>
+            </div>
+  
+            <div class="col-xl-2 mx-auto mb-md-0 mb-4">
+
+              <h6 class="font-footer mt-4 fw-bold mb-4">
+                Liên Hệ
+              </h6>
+              <p class="font-footer"><i class="fas fa-phone-alt"></i>0349177306</p>
+              <p class="font-footer"><i class="fas fa-envelope"></i>
+                contact@reactplus.jp
+              </p>
+            </div>
+            <div class="col-xl-2 mx-auto mb-md-0 mb-4">
+
+              <h6 class="font-footer mt-4 fw-bold mb-4">
+                Kết nối với chúng tôi
+              </h6>
+              <i class="fab fa-facebook fa-2x"></i>
+              <i class="fab fa-invision fa-2x"></i>
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </div>
+  
+          </div>
+
+        </div>
+      </section>
+   
+    </footer>
+
+
+  </body>
+</html>
