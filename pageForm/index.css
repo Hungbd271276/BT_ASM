@@ -1,0 +1,138 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+i {
+  margin-right: 10px;
+  color: #0bbee7;
+}
+a {
+  text-decoration: none;
+}
+.nav-link {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: black;
+}
+
+.img-navbar {
+  margin-right: 8rem;
+}
+h1 {
+  color: brown;
+}
+.input-body {
+  margin-left: 10rem;
+  max-width: 70%;
+}
+.form-control-days {
+  max-width: 20%;
+  background-color: #f4f6fa;
+}
+.input-child {
+  margin-bottom: 2rem;
+}
+.form-mail-pass {
+  width: 23rem;
+}
+.form-file {
+  background-color: #f4f6fa;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+.labelcv {
+  margin-top: 1rem;
+}
+.form-file-cv {
+  margin-left: 2rem;
+}
+.form-file-cv > div {
+  margin-top: 0.2rem;
+  color: #abaeb2;
+}
+.button-white {
+  padding: 0.3rem 5rem 0.3rem 5rem;
+  border-radius: 16px;
+  background-color: #f4f6fa;
+  color: #0bbee7;
+  cursor: pointer;
+  margin-left: 6rem;
+}
+.button-primary {
+  padding: 0.3rem 5rem 0.3rem 5rem;
+  max-height: 2rem;
+  border-radius: 16px;
+  background-color: #0bbee7;
+  border-color: coral;
+  color: #fff;
+  cursor: pointer;
+}
+.bootom-boder {
+  margin: 3rem 0 3rem 0;
+}
+.footer {
+  background-color: #f4f6fa;
+}
+.footer-content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.font-footer {
+  font-size: 13px;
+}
+@media screen and (max-width: 414px and 600px) {
+  * {
+    font-size: 14px;
+  }
+  .nav {
+    display: none;
+  }
+  .input-body {
+    margin: 0;
+  }
+  .input-mail {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-file {
+    width: 100%;
+  }
+  .bootom-boder {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .button-white {
+    margin: 8px 6px 8px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 14px;
+  }
+  .nav {
+    display: none;
+  }
+  .input-body {
+    margin: 0;
+  }
+  .input-mail {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-file {
+    width: 100%;
+  }
+  .bootom-boder {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .button-white {
+    margin: 8px 6px 8px 0;
+  }
+}
