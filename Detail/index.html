@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/css/customer.css">
+</head>
+<body>
+    <header  >
+        <nav class="nabbar navbar d-md-flex justify-content-between align-items-center">
+           <div class="container">
+                <div class="col-2 ">
+                    <div class="image">
+                        <img src="./assest/images/logo.png" alt="image">
+                    </div>
+                 </div>
+  
+                 <div class="col-10 nav-menu_right" >
+                     <ul class="nav-ul">
+                         <li><a href="#">Trang chủ</a></li>
+                         <li><a href="#">Giới thiệu <img class="vertor" src="./assest/images/Vector 2.png" alt="image"></a>
+                            <ul class="submenu">
+                                <li><a href="#">Về React & React Native</a></li>
+                                <li><a href="#">Công ty React Plus</a></li>
+                                <li><a href="#">Các khoá đào tạo</a></li>
+                                <li><a href="#">Sự kiện thường kỳ</a></li>
+                               </ul>
+                        
+                        </li>
+                         <li><a href="#">Văn hóa </a></li>
+                         <li><a href="#">Tuyển dụng</a></li>
+                         <li><a href="#">Đào tạo & Sự kiện</a></li>
+                         <li><a href="#">Vì cộng đồng</a></li>
+                         <li><a href="#">Tin tức & Blog</a></li>
+                     </ul>
+                     <a  class="navbar-mobile" type="button" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasRight"  aria-controls="offcanvasRight">
+                        <i class="fas fa-bars" style="color: #fff; display: flex; justify-content: flex-end; align-items: flex-end; font-size: 25px;"></i>
+                      </a>
+                    </div>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div class="image">
+                                <img src="./assest/images/logo.png" alt="image">
+                            </div>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" >
+                                    <a class="accordion-buttons" >
+                                        Trang chủ
+                                    </a>
+                                  </h2> 
+                                </div>
+            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+                                         Giới thiệu
+                                      </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                          <ul>
+                                              <li><a href="#">Về React & React Native</a></li>
+                                              <li><a href="#">Công ty React Plus</a></li>
+                                              <li><a href="#">Các khoá đào tạo</a></li>
+                                              <li><a href="#">Sự kiện thường kỳ</a></li>
+                                          </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+            
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" >
+                                      <a class="accordion-buttons">
+                                        Văn hóa
+                                      </a>
+                                    </h2>
+                                  </div>
+            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" >
+                                      <a class="accordion-buttons">
+                                        Tuyển dụng
+                                      </a>
+                                    </h2>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Đào tạo & Sự kiện
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Bảng tin</a></li>
+                                            <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Thiết kế Web</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" >
+                                      <a class="accordion-buttons">
+                                        Vì Cộng đồng
+                                      </a>
+                                    </h2>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" >
+                                      <a class="accordion-buttons">
+                                        Tin tức & Blog
+                                      </a>
+                                    </h2>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                      </div> 
+  </header><!--end-header-->
+    <main>
+        <section class="banner">
+            <div class="banner-image">
+                <div class="introduce d-flex justify-content-center align-items-center">
+                    <h1>React Plus Career</h1>
+               </div>
+                   <div class="ReactPlus-Career mt-2">
+                       <div class="infomation-col d-flex justify-content-evenly align-items-center">
+                        <div class="holtel d-flex justify-content-between align-items-center">
+                            <div class="hotel-icon">
+                               <a href="#"> <i class="fas fa-phone-alt"></i></a>
+                            </div>
+                            <div class="hotel-phone">
+                                <p>Hotline</p>
+                                <p>034 9177 306</p>
+                            </div>
+                          </div>
+                            <div class="top-bar"></div>
+                          <div class="email d-flex justify-content-between align-items-center">
+                              <div class="email-icon">
+                                <a href="#"> <i class="far fa-envelope"></i></a>
+                              </div>
+                              <div class="email-name">
+                                  <p>Email</p>
+                                  <p>huett@reactplus.com</p>
+                              </div>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="Candidate text-center">
+                       <a href="#">Đăng ký ứng viên tiềm năng</a>
+                   </div>
+            </div>
+        </section><!--end-banner-->
+
+        <section class="come-back">
+             <div class="container">
+                <div class="row">
+                    <div class="col-xl-8" style="border-bottom: 1px solid #EBEBEB; padding: 30px;">
+                        <div class="see-more" style="display: flex; justify-content: flex-start; border-bottom: 1px solid #EBEBEB; padding: 20px; margin-left: -40px;">
+                             <div class="arrow" style="background: #F4F6FA; border-radius: 50%; width: 24px; height: 24px; margin: 0 15px;">
+                               <a href="#" style="text-align: center; padding: 0px 9px; font-size: 12px;"><i class="fal fa-chevron-left"></i></a>
+                             </div>
+                             <a href="#" style="width: 73px; height: 19px; font-weight: 400; font-style: normal; font-size: 14px; text-decoration: none; line-height: 
+                             18,96px; color: #0BBEE7;"> <p>Quay lại</p></a>
+                         </div><!--see-more-->
+    
+                         <div class="check-in" style="display: flex; justify-content: flex-start; align-items: flex-start; padding-top: 20px; margin-left: -25px;">
+                            <div class="arrow" style="width: 24px; margin: 0 15px;"">
+                              <a href="#" style="text-align: center; padding: 0px 9px; font-size: 12px;"><img src="./assest/images/Path.png" alt=""></a>
+                            </div>
+                            <div class="check-in_right">
+                                <a href="#"> <p>Hà Nội</p></a>
+                            </div>
+    
+                            <div class="full-time">
+                                <a>Full-time</a>
+                            </div>
+                        </div><!--end-check-in-->
+                         
+                        <div class="Customer-care">
+                            <h1>Chuyên viên chăm sóc khách hàng</h1>
+                            <h2 class="py-3">Nội dung công việc</h2>
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                              <div class="circle">
+                                <img src="./assest/images/Ellipse 224.png">
+                              </div>
+                              <p>
+                                Quản lý hình ảnh và thông tin Doanh nghiệp. </p>
+                            </div><!--end-expert-text-->
+                              
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                            <p>
+                                Phụ trách các kênh truyền thông của công ty: website, Fanpage, bảng tin nội bộ 
+                            </p>
+                            </div><!--end-expert-text-->
+                           
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Phụ trách biên tập các ấn phẩm nội bộ, các tài liệu, hướng dẫn truyền thông nhằm gia tăng tinh thần gắn kết của nhân viên công ty, nâng cao kiến thức về nhận diện, phát triển thương hiệu cho CBNV. 
+                                </p>
+                            </div><!--end-expert-text-->
+
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Lên ý tưởng xây dựng, tổ chức các event nội bộ, các hoạt động tập thể nhằm tạo sự gắn kết trong cán bộ nhân viên. 
+                                </p>
+                            </div><!--end-expert-text-->
+                             
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div> 
+                            <p>
+                                Thu thập và duy trì cơ sở dữ liệu bài viết, hình ảnh, âm thanh, ấn phẩm liên quan phục vụ công tác lưu trữ lịch sử. 
+                            </p>
+                            </div><!--end-expert-text-->
+
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div> 
+                                <p>
+                                    Thực hiện các công việc khác do TP Nhân sự giao.
+                                </p>
+                            </div><!--end-expert-text-->
+                        </div>
+    
+                        <div class="work-content">
+                            <h2>Yêu cầu với ứng viên</h2>
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div> 
+                                <p>
+                                    Tốt nghiệp Đại học chuyên ngành báo chí, truyền thông, quan hệ công chúng hoặc các chuyên ngành có liên quan. 
+                                </p>
+                            </div><!--end-expert-text-->
+                               
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div> 
+                                <p>
+                                    Có ít nhất 1 năm kinh nghiệm làm truyền thông – Pr, tổ chức sự kiện, (1-2 năm làm truyền thông nội bộ). 
+                                </p>
+                            </div><!--end-expert-text-->
+                               
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Khả năng viết tốt, có thể sử dụng các phần mềm thiết kế dàn trang, các phần mềm xử lý Video, phần mềm xử lý ảnh đơn giản. 
+                                </p> 
+                            </div><!--end-expert-text-->
+
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Có khả năng kết nối, cổ động mọi người, chủ động trong việc điều phối, triển khai công việc (có khả năng thuyết trình, làm MC là một lợi thế). 
+                
+                                </p>
+                            </div><!--end-expert-text-->
+                            
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Hình thức thân thiện, dễ mến, yêu thích các hoạt động xã hội, hoạt động tập thể. 
+                                </p>
+                            </div><!--end-expert-text-->
+
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Năng động, sáng tạo, nhiều ý tưởng tổ chức các chương trình sự kiện. 
+                                </p>
+                            </div><!--end-expert-text-->
+                        </div><!--end-work-content-->
+
+                        <div class="Remuneration">
+                             <h2>Thời gian và địa điểm làm việc</h2>
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Mức lương: ~ 15 Triệu VND/tháng 
+                                  
+                                </p>
+                             </div><!--end-expert-text-->
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                   <p>
+                                    Thưởng tháng 13. Thưởng cuối năm. Review lương 2 lần /năm. 
+                                   </p>  
+                             </div><!--end-expert-text-->
+
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                
+                             <p>
+                                Nhận quà hoặc tiền mặt vào ngày lễ tết. 
+
+                            </p>
+                             </div><!--end-expert-text-->
+
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                             <p>
+                                Đóng BHXH theo quy định luật LĐVN. 
+
+                            </p>
+                             </div><!--end-expert-text-->
+
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                
+                             <p>
+                                Khám sk định kỳ 1 năm/lần. 
+                            </p>
+                             </div><!--end-expert-text-->
+
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Lộ trình thăng tiến rõ ràng. 
+                                </p>
+                             </div><!--end-expert-text-->
+
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                             <p>
+                                Được làm việc với công ty khách hàng là tập đoàn lớn bên Nhật. 
+                            </p>
+                             </div> <!--end-expert-text-->
+
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Được đào tạo về ngôn ngữ, kỹ năng mềm. 
+                                </p>
+                             </div> <!--end-expert-text-->
+
+                             <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Tham gia các hoạt động tea break hàng ngày, event sôi động, open talk hàng tháng, teambuilding, du lịch hàng năm.
+                                </p>
+                             </div>
+                        </div><!--end-Remuneration-->
+                         
+                        <div class="work-time">
+                            <h2>Thời gian và địa điểm làm việc</h2>
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Thời gian: 9h – 16h , từ thứ 2 đến thứ 6 hàng tuần. 
+                                </p>
+                            </div> <!--end-expert-text-->
+
+                            <div class="expert-text d-flex justify-content-start align-items-start">
+                                <div class="circle">
+                                    <img src="./assest/images/Ellipse 224.png">
+                                </div>
+                                <p>
+                                    Địa điểm: Tầng 7, Golden Filed Building, số 24 Nguyễn Cơ Thạch, Nam Từ Liêm, Hà Nội.
+                                </p>
+                            </div> <!--end-expert-text-->
+                        </div><!--end-work-time-->
+                        
+                        <div class="apply-for mt-3">
+                            <a href="#">Ứng tuyển vị trí này</a>
+                        </div>
+    
+                     </div>
+                     <div class="col-xl-4">
+                       <div class="job-cv">
+                        <div class="apply-fors">
+                            <a href="#">Ứng tuyển vị trí này</a>
+                        </div>
+                        <div class="join-relate">
+                            <h4>Job liên quan</h4>
+                        </div>
+                        <div class="location-join">
+                         <a href="#">   <p>Thực tập sinh lập trình React Native</p></a>
+                            <p>Hà Nội</p>
+                        </div>
+                        <div class="location-join">
+                         <a href="#"> <p>Lập trình viên React</p></a>
+                            <p>Hà Nội</p>
+                        </div>
+                        <div class="location-join">
+                          <a href="#">  <p>Thực tập sinh lập trình React Native</p></a>
+                            <p>Hà Nội</p>
+                        </div>
+                       </div>
+                        
+                     </div>
+                </div>
+             </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="row mx-auto">
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg logo-footer">
+                        <a href="">
+                            <img src="./assest/images/logo.png" alt="">
+                        </a>
+                        <p>
+                            Tầng 7, Golden Field Building,<br>
+                            24 Nguyễn Cơ Thạch, Nam Từ Liêm, Hà Nội
+                        </p>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg  community-footer">
+                        <ul>
+                            <li><a class="community" href="">Cộng đồng</a></li>
+                            <li><a class="community-item" href="">Đào tạo & Sự kiện</a></li>
+                            <li><a class="community-item" href="">Vì cộng đồng</a></li>
+                            <li><a class="community-item" href="">Tin tức & Blog</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg community-footer">
+                        <ul>
+                            <li><a class="community" href="">Công ty</a></li>
+                            <li><a class="community-item" href="">Giới thiệu</a></li>
+                            <li><a class="community-item" href="">Văn hoá</a></li>
+                            <li><a class="community-item" href="">Tuyển dụng</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg community-footer">
+                        <ul>
+                            <li><a class="community" href="">Liên Hệ</a></li>
+                            <li><a class="community-item" href=""><img src="./assest/images/Vector-1.png" alt="">0349177306 </a>
+                            </li>
+                            <li><a class="community-item" href=""><img src="./assest/images/Vector 2.png" alt="">contact@reactplus.jp</a>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg connection-footer">
+                        <a class="connection" href="">kết nối với chúng tôi</a>
+                        <div class="connection-footer-icon">
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/images/Vector3.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/images/Vector 4.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="connection-img">
+                                <a href="">
+                                    <img src="./assest/images/Vector 5.png" alt="image">
+                                </a>
+                            </div>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <span class="bottom-footer">© React Plus, JSC 2021. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <script>
+        window.addEventListener("scroll", function() {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
