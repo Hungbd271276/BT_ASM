@@ -107,20 +107,6 @@ height: 40px;
 
 
 
-
-
-
-
-/*Media query*/
-@media (max-width: 1200px) {
-   .nav-menu_right ul {
-       display: none;
-   }
-
-   .navbar-mobile {
-       display: block;
-   }
-}
 .main-head{
   display: flex;
 }
@@ -341,3 +327,23 @@ height: 40px;
   
 }
 /*end footer */
+ /*Media query*/
+ @media (max-width: 1200px) {
+  .nav-menu_right ul {
+      display: none;
+  }
+
+  .navbar-mobile {
+      display: block;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+.main-3{
+  display: flex;
+  flex-direction: column;
+}
+}
+@media only screen and (max-width: 768px) {
+
+}
