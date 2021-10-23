@@ -15,40 +15,143 @@
     
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./index.css"></link>
     <title>ReactPlus</title>
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
    <div class="container">
-    <ul class="nav py-3 justify-content-around">
-      <li>
-        <img class="img-navbar" src="./img/Logo React Plus-Final-04 1.png"/>
-      </li>
+    <header class="sticky-top">
+      <nav class="nabbar navbar d-md-flex justify-content-between align-items-center">
+        <div class="container">
+          <div class="col-2 ">
+            <div class="image">
+              <img src="./img/Logo React Plus-Final-04 1.png" alt="image">
+            </div>
+          </div>
   
-        <li class="nav-item">
-          <a class="nav-link " href="/BT_ASM/trangchu/trangchu">Trang chủ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/BT_ASM/gioithieu/gioithieu">Giới thiệu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/BT_ASM/Calcurltu/index">Văn hóa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Tuyển dụng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/BT_ASM/event/event">Đào tạo&Sự kiện</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/BT_ASM/educate/educate">Vì cộng đồng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Tin tức&Blog</a>
-        </li>
-    </ul>
+          <div class="col-10 nav-menu_right">
+            <ul class="nav-ul">
+              <li><a href="/BT_ASM/trangchu/trangchu">Trang chủ</a></li>
+              <li><a href="/BT_ASM/gioithieu/gioithieu">Giới thiệu <img class="vertor" src="./img/vt.png" alt="image"></a>
+                <ul class="submenu">
+                  <li><a href="BT_ASM/about/about">Về React & React Native</a></li>
+                  <li><a href="#">Công ty React Plus</a></li>
+                  <li><a href="#">Các khoá đào tạo</a></li>
+                  <li><a href="#">Sự kiện thường kỳ</a></li>
+                </ul>
+  
+              </li>
+              <li><a href="/BT_ASM/Calcurltu/index">Văn hóa </a></li>
+              <li><a href="/BT_ASM/pageRoadMap/index">Tuyển dụng</a></li>
+              <li><a href="/BT_ASM/event/event">Đào tạo & Sự kiện</a></li>
+              <li><a href="/BT_ASM/chungtay/chungtay">Vì cộng đồng</a></li>
+              <li><a href="/BT_ASM/new&blog/new&blog">Tin tức & Blog</a></li>
+            </ul>
+            <a class="navbar-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <i class="fas fa-bars"
+                style="color: #000; display: flex; justify-content: flex-end; align-items: flex-end; font-size: 25px; "></i>
+            </a>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <div class="image">
+                <img src="./img/Logo React Plus-Final-04 1.png"" alt="image">
+              </div>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-buttons">
+                      Trang chủ
+                    </a>
+                  </h2>
+                </div>
+  
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+                      Giới thiệu
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="#">Về React & React Native</a></li>
+                        <li><a href="#">Công ty React Plus</a></li>
+                        <li><a href="#">Các khoá đào tạo</a></li>
+                        <li><a href="#">Sự kiện thường kỳ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-buttons">
+                      Văn hóa
+                    </a>
+                  </h2>
+                </div>
+  
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-buttons">
+                      Tuyển dụng
+                    </a>
+                  </h2>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Đào tạo & Sự kiện
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Bảng tin
+                          </a></li>
+                        <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Thiết kế Web
+                          </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-buttons">
+                      Vì Cộng đồng
+                    </a>
+                  </h2>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-buttons">
+                      Tin tức & Blog
+                    </a>
+                  </h2>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+    </header>
+    <!--end-header-->
+  
+
+
+    
     <div class="d-flex justify-content-center py-5 flex-column align-items-center">
       <h2>Chuyên viên chăm sóc khách hàng</h2>
     </div>
@@ -112,7 +215,7 @@
             <label for="input4" class="form-label">Một vài tin nhắn dành cho chúng tôi(Không bắt buộc)</label>
             <input type="text" class="form-control" id="input4" aria-describedby="emailHelp">
           </div>
-          <div class="d-flex align-items-center justify-content-between bootom-boder">
+          <div class=" d-flex align-items-center justify-content-between bootom-boder">
             <div>
               <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
             </div>
@@ -199,14 +302,16 @@
               <i class="fab fa-invision fa-2x"></i>
               <i class="fab fa-youtube-square fa-2x"></i>
             </div>
-  
-          </div>
 
+          </div>
         </div>
       </section>
    
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
   </body>
 </html>

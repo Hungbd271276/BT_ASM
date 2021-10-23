@@ -38,6 +38,22 @@ header {
  .offcanvas-end {
      width: 320px;
  }
+ .accordion-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  .accordion-body ul li {
+    border-bottom: 1px solid #f1f1f1;
+    width: 283px;
+  }
+  .accordion-body ul li a {
+    font-size: 13.5px;
+    color: #212529;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 6.1px;
+    line-height: 45px;
+  }
  /*end nabMobile*/
 
  

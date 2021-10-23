@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +26,22 @@ header {
 /*nabMobile*/
 .offcanvas-end {
   width: 320px;
+}
+.accordion-body ul {
+  list-style: none;
+  padding: 0;
+}
+.accordion-body ul li {
+  border-bottom: 1px solid #f1f1f1;
+  width: 283px;
+}
+.accordion-body ul li a {
+  font-size: 13.5px;
+  color: #212529;
+  text-decoration: none;
+  width: 100%;
+  padding: 0 6.1px;
+  line-height: 45px;
 }
 
 /*end nabMobile*/
@@ -198,7 +214,7 @@ header.sticky {
 
 .main-mid p {
   text-align: justify;
-  font-family: "SVN-Poppins";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -232,7 +248,7 @@ header.sticky {
 }
 
 .main-content p {
-  font-family: 'SVN-Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 13px;

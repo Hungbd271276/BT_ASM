@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
 *{
  padding: 0;
  margin: 0;
@@ -20,11 +21,23 @@ header {
 .offcanvas-end {
   width: 320px;
 }
-/*end nabMobile*/
-header.sticky {
-  background-color: #000;
+.accordion-body ul {
+  list-style: none;
+  padding: 0;
 }
-
+.accordion-body ul li {
+  border-bottom: 1px solid #f1f1f1;
+  width: 283px;
+}
+.accordion-body ul li a {
+  font-size: 13.5px;
+  color: #212529;
+  text-decoration: none;
+  width: 100%;
+  padding: 0 6.1px;
+  line-height: 45px;
+}
+/*end nabMobile*/
 .image img {
 width: 77px;
 height: 40px;
